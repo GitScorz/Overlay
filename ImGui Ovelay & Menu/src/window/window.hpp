@@ -60,7 +60,7 @@ public:
 private:
 	// winapi window requirements
 	HWND overlay;
-	WNDCLASSEX wc;
+	WNDCLASSEX wc = { 0 };
 
 	ID3D11Device* device;
 	ID3D11DeviceContext* device_context;
